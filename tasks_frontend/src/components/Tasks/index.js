@@ -16,7 +16,7 @@ import NoTask from '../Warnings/NoTask';
 
 function deleteTask(e) {
   if ( e.target.id ) {
-    axios.delete(api+e.target.id)
+    axios.delete(api+'/'+e.target.id)
     .then(res => window.location.reload());
   }
 }
